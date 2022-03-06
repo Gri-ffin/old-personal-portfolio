@@ -9,7 +9,7 @@ function App() {
   const handleLoading = () => {
     setIsLoading(false)
   }
-
+  // should be further invastigated if it works TODO: check if this set really wait until loading
   useEffect(() => {
     window.addEventListener('load', handleLoading)
     return () => window.removeEventListener('load', handleLoading)
