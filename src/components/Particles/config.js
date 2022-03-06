@@ -1,15 +1,5 @@
+// tsparticles configuration
 export const config = {
-  background: {
-    color: {
-      value: '#000'
-    },
-    position: '50% 50%',
-    repeat: 'no-repeat',
-    size: 'cover'
-  },
-  fullScreen: {
-    zIndex: 1
-  },
   interactivity: {
     events: {
       onClick: {
