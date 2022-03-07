@@ -1,24 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { Box } from '@chakra-ui/react'
-import ParticleBackground from './components/Particles/Index'
-import LoadingPage from './components/LoadingPage/Index'
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/Home'
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
-
-  const handleLoading = () => {
-    setIsLoading(false)
-  }
-  // should be further invastigated if it works TODO: check if this set really wait until loading
-  useEffect(() => {
-    window.addEventListener('load', handleLoading)
-    return () => window.removeEventListener('load', handleLoading)
-  }, [])
-
   return (
-    <Box w="100vw" h="100vh" bg={'gray.900'} color="white">
-      {!isLoading ? <ParticleBackground /> : <LoadingPage />}
-    </Box>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   )
 }
 
