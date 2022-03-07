@@ -9,7 +9,7 @@ export const NavBarLink = ({ path, text }) => {
       <Link
         p={2}
         _hover="none"
-        color={useColorModeValue('whiteAlpha.900', 'gray.800')}
+        color={useColorModeValue('gray.800', 'whiteAlpha.900')}
       >
         {text}
       </Link>

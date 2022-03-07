@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { Link as ReactLink } from 'react-router-dom'
 import { IconButton } from '@chakra-ui/react'
+import ThemeToggleButton from './ThemeToggleButton'
 
 const NavBar = () => {
   return (
@@ -18,7 +19,7 @@ const NavBar = () => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('gray.700', 'whiteAlpha.900')}
+      bg={useColorModeValue('whiteAlpha.900', 'gray.700')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
     >
@@ -37,6 +38,7 @@ const NavBar = () => {
         </Flex>
         <NavbarLinks useColorModeValue={useColorModeValue} />
         <Box flex={1} align="right">
+          <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <MenuDrop
               IconButton={IconButton}

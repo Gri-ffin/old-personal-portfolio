@@ -19,7 +19,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const dogFootImage = `/images/footprint${useColorModeValue('-dark', '')}.png`
+  const dogFootImage = `/images/footprint${useColorModeValue('', '-dark')}.png`
 
   return (
     <Link to="/">
@@ -27,7 +27,7 @@ const Logo = () => {
         <LogoBox>
           <Image src={dogFootImage} w={5} h={5} alt="Dog footprint Logo" />
           <Text
-            color={useColorModeValue('whiteAlpha.900', 'gray.800')}
+            color={useColorModeValue('black', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c"
             fontWeight="bold"
             ml={3}
