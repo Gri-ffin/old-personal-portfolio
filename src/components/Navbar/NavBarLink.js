@@ -6,11 +6,7 @@ import { useColorModeValue } from '@chakra-ui/react'
 export const NavBarLink = ({ path, text }) => {
   return (
     <NavLink to={path}>
-      <Link
-        p={2}
-        _hover="none"
-        color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-      >
+      <Link p={2} color={useColorModeValue('gray.800', 'whiteAlpha.900')}>
         {text}
       </Link>
     </NavLink>
