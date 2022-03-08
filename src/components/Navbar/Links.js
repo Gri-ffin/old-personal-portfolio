@@ -32,7 +32,7 @@ export function NavbarLinks() {
         isExternal
         _focus="none"
       >
-        Code source
+        Source Code
       </Link>
     </Stack>
   )

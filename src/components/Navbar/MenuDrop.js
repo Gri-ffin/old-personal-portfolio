@@ -47,7 +47,7 @@ export function MenuDrop({ IconButton, ReactLink }) {
           color={useColorModeValue('whiteAlpha.900', 'gray.800')}
           isExternal
         >
-          <MenuItem _focus="none">Code source</MenuItem>
+          <MenuItem _focus="none">Source Code</MenuItem>
         </Link>
       </MenuList>
     </Menu>
