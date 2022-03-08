@@ -1,7 +1,14 @@
 import React from 'react'
-import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  useColorModeValue
+} from '@chakra-ui/react'
 import ParticleBackground from '../components/Particles/Index'
 import Typewriter from 'typewriter-effect'
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
   return (
@@ -30,6 +37,13 @@ const HomePage = () => {
               loop: true
             }}
           />
+          <Button
+            bg={useColorModeValue('white', 'black')}
+            color={useColorModeValue('gray.900', 'white')}
+            mt={5}
+          >
+            <Link to="/about"> About me</Link>
+          </Button>
         </Heading>
       </Container>
     </Box>
