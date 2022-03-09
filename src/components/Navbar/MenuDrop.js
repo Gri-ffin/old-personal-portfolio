@@ -25,21 +25,21 @@ export function MenuDrop({ IconButton, ReactLink }) {
           to="/"
           color={useColorModeValue('whiteAlpha.900', 'gray.800')}
         >
-          <MenuItem _focus={'none'}>Home</MenuItem>
+          <MenuItem _focus="none">Home</MenuItem>
         </Link>
         <Link
           as={ReactLink}
           to="/about"
           color={useColorModeValue('whiteAlpha.900', 'gray.800')}
         >
-          <MenuItem _focus={'none'}>About</MenuItem>
+          <MenuItem _focus="none">About</MenuItem>
         </Link>
         <Link
           as={ReactLink}
           to="/works"
           color={useColorModeValue('whiteAlpha.900', 'gray.800')}
         >
-          <MenuItem _focus={'none'}>Projects</MenuItem>
+          <MenuItem _focus="none">Projects</MenuItem>
         </Link>
         <Link
           as="a"
