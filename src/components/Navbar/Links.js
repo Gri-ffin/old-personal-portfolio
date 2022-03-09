@@ -30,7 +30,6 @@ export function NavbarLinks() {
         href="https://github.com/Gri-ffin/personal-portfolio"
         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
         isExternal
-        _focus="none"
       >
         Source Code
       </Link>
