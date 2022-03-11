@@ -12,8 +12,9 @@ export const ReachOut = () => {
         </Heading>
         <Container display="flex" flexDirection="row">
           <Link
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/in/yassine-tadlaoui/"
             color={useColorModeValue('gray.900', 'whiteAlpha.900')}
+            target="_blank"
           >
             <IoLogoLinkedin size={50} />
           </Link>
@@ -21,6 +22,7 @@ export const ReachOut = () => {
             href="https://github.com/Gri-ffin"
             color={useColorModeValue('gray.900', 'whiteAlpha.900')}
             marginLeft="1.5rem"
+            target="_blank"
           >
             <IoLogoGithub size={50} />
           </Link>
@@ -29,6 +31,7 @@ export const ReachOut = () => {
             href="mailto:yassinetadlaoui8@gmail.com"
             color={useColorModeValue('gray.900', 'whiteAlpha.900')}
             marginLeft="1.5rem"
+            target="_blank"
           >
             <IoMdMail size={50} />
           </Link>
