@@ -9,6 +9,7 @@ import {
 import ParticleBackground from '../components/Particles/Index'
 import Typewriter from 'typewriter-effect'
 import { Link } from 'react-router-dom'
+import { Section } from '../components/Section'
 
 const HomePage = () => {
   return (
@@ -26,25 +27,27 @@ const HomePage = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Heading as="h1" align="center">
-          Hello, I&apos;m Yassine Tadlaoui, I&apos;m a
-          <Typewriter
-            options={{
-              strings: ['Developer.', 'Code enthusiast.', 'Gamer.'],
-              autoStart: true,
-              delay: 'natural',
-              deleteSpeed: 'natural',
-              loop: true
-            }}
-          />
-          <Button
-            bg={useColorModeValue('white', 'black')}
-            color={useColorModeValue('gray.900', 'white')}
-            mt={5}
-          >
-            <Link to="/about"> About me</Link>
-          </Button>
-        </Heading>
+        <Section delay={0.2}>
+          <Heading as="h1" align="center">
+            Hello, I&apos;m Yassine Tadlaoui, I&apos;m a
+            <Typewriter
+              options={{
+                strings: ['Developer.', 'Code enthusiast.', 'Gamer.'],
+                autoStart: true,
+                delay: 'natural',
+                deleteSpeed: 'natural',
+                loop: true
+              }}
+            />
+            <Button
+              bg={useColorModeValue('white', 'black')}
+              color={useColorModeValue('gray.900', 'white')}
+              mt={5}
+            >
+              <Link to="/about"> About me</Link>
+            </Button>
+          </Heading>
+        </Section>
       </Container>
     </Box>
   )
