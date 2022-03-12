@@ -24,7 +24,7 @@ const Logo = () => {
   return (
     <Link to="/">
       <LogoBox>
-        <Image src={dogFootImage} w={5} h={5} alt="Dog footprint Logo" />
+        <Image src={dogFootImage} w={5} h={5} alt="Logo" />
         <Text
           color={useColorModeValue('black', 'whiteAlpha.900')}
           fontFamily="M PLUS Rounded 1c"
