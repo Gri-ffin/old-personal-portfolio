@@ -32,7 +32,7 @@ const HomePage = () => {
             Hello, I&apos;m Yassine Tadlaoui, I&apos;m a
             <Typewriter
               options={{
-                strings: ['Developer.', 'Code enthusiast.', 'Gamer.'],
+                strings: ['Developer.', 'Code enthusiast.', 'Fast learner.'],
                 autoStart: true,
                 delay: 'natural',
                 deleteSpeed: 'natural',
