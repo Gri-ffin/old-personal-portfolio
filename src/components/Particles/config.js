@@ -36,7 +36,7 @@ export const config = {
       },
       distance: 150,
       enable: true,
-      opacity: 0.9
+      opacity: 0.6
     },
     move: {
       attract: {
