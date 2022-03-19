@@ -1,3 +1,3 @@
 # Personal Portfolio
 
-built with React and Chakra ui
+built with React and Chakra ui.
