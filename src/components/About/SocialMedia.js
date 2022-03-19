@@ -8,7 +8,7 @@ export const ReachOut = () => {
     <Container display="flex" flexDirection="row" justifyContent="left">
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          Social Media
+          Where to find me
         </Heading>
         <Container display="flex" flexDirection="row">
           <Link
