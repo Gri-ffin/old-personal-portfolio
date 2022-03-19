@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/Navbar/Index'
-import AboutPage from './pages/About'
-import HomePage from './pages/Home'
+const AboutPage = React.lazy(() => import('./pages/About'))
+const HomePage = React.lazy(() => import('./pages/Home'))
+import LoadingSpinner from './components/LoadingSpinner'
 
 function App() {
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </Suspense>
     </>
   )
 }
