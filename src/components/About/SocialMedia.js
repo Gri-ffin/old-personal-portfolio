@@ -15,6 +15,7 @@ export const ReachOut = () => {
             href="https://www.linkedin.com/in/yassine-tadlaoui/"
             color={useColorModeValue('gray.900', 'whiteAlpha.900')}
             target="_blank"
+            isExternal
           >
             <IoLogoLinkedin size={50} />
           </Link>
@@ -23,6 +24,7 @@ export const ReachOut = () => {
             color={useColorModeValue('gray.900', 'whiteAlpha.900')}
             marginLeft="1.5rem"
             target="_blank"
+            isExternal
           >
             <IoLogoGithub size={50} />
           </Link>
@@ -32,6 +34,7 @@ export const ReachOut = () => {
             color={useColorModeValue('gray.900', 'whiteAlpha.900')}
             marginLeft="1.5rem"
             target="_blank"
+            isExternal
           >
             <IoMdMail size={50} />
           </Link>
