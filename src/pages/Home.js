@@ -10,6 +10,7 @@ import ParticleBackground from '../components/Particles/Index'
 import Typewriter from 'typewriter-effect'
 import { Link } from 'react-router-dom'
 import { Section } from '../components/Section'
+import { Footer } from '../components/Footer'
 
 const HomePage = () => {
   return (
@@ -18,6 +19,8 @@ const HomePage = () => {
       h="100vh"
       bg={useColorModeValue('whiteAlpha.400', 'gray.800')}
       color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+      overflow="hidden"
+      overflowY="scroll"
     >
       <ParticleBackground />
       <Container
@@ -49,6 +52,7 @@ const HomePage = () => {
           </Heading>
         </Section>
       </Container>
+      <Footer />
     </Box>
   )
 }
