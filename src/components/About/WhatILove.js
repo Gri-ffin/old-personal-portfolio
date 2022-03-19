@@ -8,7 +8,7 @@ export function WhatILove() {
     <Container display="flex" justifyContent="left" alignItems="center">
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          What i love in life
+          Things I love
         </Heading>
         <Paragraph>Coding, Music, Drawing, Relaxing, Gaming...</Paragraph>
       </Section>
