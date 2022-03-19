@@ -6,7 +6,11 @@ export const Footer = () => {
 
   return (
     <Container as="footer">
-      <Text as="h5" color={useColorModeValue('black', 'whiteAlpha.900')}>
+      <Text
+        as="h5"
+        color={useColorModeValue('black', 'whiteAlpha.900')}
+        textAlign="center"
+      >
         &copy; {yearNow} Yassine Tadlaoui, All Rights Reserved.
       </Text>
     </Container>
