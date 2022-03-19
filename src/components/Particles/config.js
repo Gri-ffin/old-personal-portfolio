@@ -16,7 +16,7 @@ export const config = {
     },
     modes: {
       bubble: {
-        distance: 400,
+        distance: 300,
         duration: 2,
         opacity: 0.8,
         size: 40
