@@ -28,15 +28,15 @@ export const config = {
   },
   particles: {
     color: {
-      value: '#ffffff'
+      value: '#FF0000'
     },
     links: {
       color: {
-        value: '#ffffff'
+        value: '#FF0000'
       },
       distance: 150,
       enable: true,
-      opacity: 0.4
+      opacity: 0.9
     },
     move: {
       attract: {
