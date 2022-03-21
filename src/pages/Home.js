@@ -10,7 +10,6 @@ import ParticleBackground from '../components/Particles/Particles'
 import Typewriter from 'typewriter-effect'
 import { Link } from 'react-router-dom'
 import { Section } from '../components/Section'
-import { Footer } from '../components/Footer'
 
 const HomePage = () => {
   return (
@@ -52,7 +51,6 @@ const HomePage = () => {
           </Heading>
         </Section>
       </Container>
-      <Footer />
     </Box>
   )
 }

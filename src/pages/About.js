@@ -3,7 +3,6 @@ import { AboutMe } from './../components/About/AboutMe'
 import React from 'react'
 import { Box, useColorModeValue, Container, Image } from '@chakra-ui/react'
 import { ReachOut } from '../components/About/SocialMedia'
-import { Footer } from '../components/Footer'
 import { motion } from 'framer-motion'
 const AboutPage = () => {
   return (
@@ -52,7 +51,6 @@ const AboutPage = () => {
       <AboutMe />
       <WhatILove />
       <ReachOut />
-      <Footer />
     </Box>
   )
 }

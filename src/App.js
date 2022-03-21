@@ -5,6 +5,7 @@ const AboutPage = React.lazy(() => import('./pages/About'))
 const HomePage = React.lazy(() => import('./pages/Home'))
 import LoadingSpinner from './components/LoadingSpinner'
 import ProjectsPage from './pages/Projects'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   )
 }
