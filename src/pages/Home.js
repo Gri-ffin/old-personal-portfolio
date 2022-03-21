@@ -6,7 +6,7 @@ import {
   Heading,
   useColorModeValue
 } from '@chakra-ui/react'
-import ParticleBackground from '../components/Particles/Index'
+import ParticleBackground from '../components/Particles/Particles'
 import Typewriter from 'typewriter-effect'
 import { Link } from 'react-router-dom'
 import { Section } from '../components/Section'
