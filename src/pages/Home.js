@@ -42,7 +42,7 @@ const HomePage = () => {
               }}
             />
             <Button
-              bg={useColorModeValue('white', 'black')}
+              bg={useColorModeValue('gray.100', 'black')}
               color={useColorModeValue('gray.900', 'white')}
               mt={5}
             >
