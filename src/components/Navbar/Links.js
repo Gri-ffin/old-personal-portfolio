@@ -25,7 +25,7 @@ export function NavbarLinks() {
       }}
     >
       <NavBarLink path="/about" text="About" />
-      <NavBarLink path="/works" text="Projects" />
+      <NavBarLink path="/projects" text="Projects" />
       <Link
         href="https://github.com/Gri-ffin/personal-portfolio"
         color={useColorModeValue('gray.800', 'whiteAlpha.900')}

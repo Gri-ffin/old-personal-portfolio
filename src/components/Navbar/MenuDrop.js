@@ -36,7 +36,7 @@ export function MenuDrop({ IconButton, ReactLink }) {
         </Link>
         <Link
           as={ReactLink}
-          to="/works"
+          to="/projects"
           color={useColorModeValue('whiteAlpha.900', 'gray.800')}
         >
           <MenuItem>Projects</MenuItem>
