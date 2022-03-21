@@ -10,6 +10,7 @@ export const Footer = () => {
         as="h5"
         color={useColorModeValue('black', 'whiteAlpha.900')}
         textAlign="center"
+        fontSize={{ base: 14, md: 20 }}
       >
         &copy; {yearNow} Yassine Tadlaoui, All Rights Reserved.
       </Text>
