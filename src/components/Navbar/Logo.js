@@ -13,17 +13,11 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
-  @-webkit-keyframes img {
-    from {
-      -webkit-transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-
   img {
-    -webkit-animation: rotating 2s linear infinite;
+    transition: transform 0.7s ease-in-out;
+  }
+  img:hover {
+    transform: rotate(360deg);
   }
 `
 
