@@ -9,17 +9,15 @@ import { Footer } from './components/Footer'
 
 function App() {
   return (
-    <>
+    <Suspense fallback={<LoadingSpinner />}>
       <NavBar />
-      <Suspense fallback={<LoadingSpinner />}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
       <Footer />
-    </>
+    </Suspense>
   )
 }
 

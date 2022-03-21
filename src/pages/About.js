@@ -4,6 +4,7 @@ import React from 'react'
 import { Box, useColorModeValue, Container, Image } from '@chakra-ui/react'
 import { ReachOut } from '../components/About/SocialMedia'
 import { motion } from 'framer-motion'
+
 const AboutPage = () => {
   return (
     <Box
