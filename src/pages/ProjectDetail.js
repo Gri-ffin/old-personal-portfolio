@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {
   Badge,
-  Box,
   Button,
   Container,
   Heading,
@@ -11,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { Card } from '../components/UI/Card'
 
 const PageDetail = () => {
   let { id } = useParams()
@@ -30,21 +30,8 @@ const PageDetail = () => {
     fetchData()
   }, [])
 
-  console.log(projectData)
-
   return (
-    <Box
-      w="100vw"
-      h="100vh"
-      color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-      overflow="hidden"
-      overflowY="scroll"
-      css={{
-        '&::-webkit-scrollbar': {
-          display: 'hidden'
-        }
-      }}
-    >
+    <Card>
       <Container
         pt={28}
         css={{
@@ -98,7 +85,7 @@ const PageDetail = () => {
           </Link>
         </Container>
       </Container>
-    </Box>
+    </Card>
   )
 }
 
