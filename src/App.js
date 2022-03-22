@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from 'react'
+import React, { Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/Navbar/Navbar'
 const AboutPage = React.lazy(() => import('./pages/About'))
@@ -9,13 +9,6 @@ import { Footer } from './components/Footer'
 import Page404 from './pages/404Page'
 
 function App() {
-  // I'll render the footer only when the component mount
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    setIsLoading(false)
-  }, [])
-
   return (
     <>
       <NavBar />
@@ -27,7 +20,7 @@ function App() {
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Suspense>
-      {!isLoading && <Footer />}
+      <Footer />
     </>
   )
 }
