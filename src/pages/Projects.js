@@ -2,8 +2,8 @@ import React from 'react'
 import { Container, Heading } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 import { ProjectGridItem } from '../components/Projects/Projects'
-import discordCloneImage from '../images/discord-public-chat.png'
-import spotifyCloneImage from '../images/spotifyClone.png'
+import discordCloneImage from '../images/projects/discord-public-chat.png'
+import spotifyCloneImage from '../images/projects/spotifyClone.png'
 
 const ProjectsPage = () => {
   return (

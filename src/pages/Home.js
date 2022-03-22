@@ -16,7 +16,6 @@ const HomePage = () => {
     <Box
       w="100vw"
       h="100vh"
-      bg={useColorModeValue('whiteAlpha.400', 'gray.800')}
       color={useColorModeValue('gray.800', 'whiteAlpha.900')}
       overflow="hidden"
       overflowY="scroll"
