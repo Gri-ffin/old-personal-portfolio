@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Image, Link, LinkBox, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { Link as ReactLink } from 'react-router-dom'
+import LoadingSpinner from '../LoadingSpinner'
 
 export const ProjectGridItem = ({ children, id, title, image }) => {
   return (
@@ -18,6 +19,7 @@ export const ProjectGridItem = ({ children, id, title, image }) => {
             borderRadius="lg"
             placeholder="blur"
             loading="lazy"
+            fallback={<LoadingSpinner />}
           />
           <Container align="center">
             <Text mt={2} fontSize={{ base: 18, md: 24 }}>
