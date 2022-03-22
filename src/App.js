@@ -6,7 +6,7 @@ const HomePage = React.lazy(() => import('./pages/Home'))
 const ProjectsPage = React.lazy(() => import('./pages/Projects'))
 import LoadingSpinner from './components/LoadingSpinner'
 import Page404 from './pages/404Page'
-import PageDetail from './pages/PageDetail'
+import PageDetail from './pages/ProjectDetail'
 
 function App() {
   return (
