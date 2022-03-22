@@ -7,7 +7,14 @@ import spotifyCloneImage from '../images/projects/spotify-clone.webp'
 
 const ProjectsPage = () => {
   return (
-    <Container pt={28}>
+    <Container
+      pt={28}
+      css={{
+        '&::-webkit-scrollbar': {
+          display: 'hidden'
+        }
+      }}
+    >
       <Heading as="h2" fontSize={20} mb={6}>
         My Projects
       </Heading>

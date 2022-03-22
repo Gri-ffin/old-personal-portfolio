@@ -32,7 +32,14 @@ const PageDetail = () => {
   console.log(projectData)
 
   return (
-    <Container pt={28}>
+    <Container
+      pt={28}
+      css={{
+        '&::-webkit-scrollbar': {
+          display: 'hidden'
+        }
+      }}
+    >
       <Heading
         as="h2"
         fontSize={20}

@@ -19,6 +19,11 @@ const HomePage = () => {
       color={useColorModeValue('gray.800', 'whiteAlpha.900')}
       overflow="hidden"
       overflowY="scroll"
+      css={{
+        '&::-webkit-scrollbar': {
+          display: 'hidden'
+        }
+      }}
     >
       <ParticleBackground />
       <Container

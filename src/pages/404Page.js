@@ -20,6 +20,11 @@ const Page404 = () => {
       overflowY="scroll"
       display="flex"
       flexDir={{ base: 'column', md: 'row-reverse' }}
+      css={{
+        '&::-webkit-scrollbar': {
+          display: 'hidden'
+        }
+      }}
     >
       <Container flex={1} alignSelf="center" mt={20}>
         <Image src={lostLink} alt="Lost Link" />
