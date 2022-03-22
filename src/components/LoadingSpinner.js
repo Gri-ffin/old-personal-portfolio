@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, Container, Spinner, useColorModeValue } from '@chakra-ui/react'
 
-const LoadingSpinner = () => {
+const LoadingSpinner = ({ imageLoad }) => {
   return (
-    <Box w="100vw" h="100vh">
+    <Box h={imageLoad ? '30vh' : '100vh'} w={imageLoad ? '' : '100vw'}>
       <Container
         w="100%"
         h="100%"
