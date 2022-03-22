@@ -17,6 +17,7 @@ export const ProjectGridItem = ({ children, id, title, image }) => {
             alt={`Project ${title} thumbnail`}
             borderRadius="lg"
             placeholder="blur"
+            loading="eager"
           />
           <Container align="center">
             <Text mt={2} fontSize={{ base: 18, md: 24 }}>
