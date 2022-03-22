@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Link as ReactLink } from 'react-router-dom'
 import LoadingSpinner from '../LoadingSpinner'
 
-export const ProjectGridItem = ({ children, id, title, _image }) => {
+export const ProjectGridItem = ({ children, id, title, image }) => {
   return (
     <motion.div w="100%" align="center" whileHover={{ scale: 1.1 }}>
       <Link
@@ -14,6 +14,7 @@ export const ProjectGridItem = ({ children, id, title, _image }) => {
       >
         <LinkBox>
           <Image
+            src={image}
             alt={`Project ${title} thumbnail`}
             borderRadius="lg"
             placeholder="blur"
