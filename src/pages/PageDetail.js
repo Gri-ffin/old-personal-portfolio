@@ -43,7 +43,7 @@ const PageDetail = () => {
         {id}
       </Heading>
       <Container>
-        <img src={require(`../images/projects/${id}.png`)} alt={id} />
+        <img src={require(`../images/projects/${id}.webp`)} alt={id} />
       </Container>
       <Container mt={5}>
         <Badge fontSize={15} p={1}>
