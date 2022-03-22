@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/Navbar/Navbar'
 const AboutPage = React.lazy(() => import('./pages/About'))
 const HomePage = React.lazy(() => import('./pages/Home'))
-const ProjectsPage = React.lazy(import('./pages/Projects'))
+const ProjectsPage = React.lazy(() => import('./pages/Projects'))
 import LoadingSpinner from './components/LoadingSpinner'
 import { Footer } from './components/Footer'
 import Page404 from './pages/404Page'
