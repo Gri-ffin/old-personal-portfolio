@@ -69,7 +69,7 @@ const PageDetail = () => {
           </Badge>
           <Text fontSize={16}>{projectData?.description}</Text>
           <Badge fontSize={15} p={1} mt={3}>
-            Language
+            Languages
           </Badge>
           <Text fontSize={16}>{languages?.join(', ')}</Text>
           <Badge fontSize={15} p={1} mt={3}>
