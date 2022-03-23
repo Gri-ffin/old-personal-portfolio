@@ -31,8 +31,8 @@ const Page404 = () => {
       </Container>
       <Container flex={1} alignSelf="center">
         <Text fontSize="xl">
-          Oh, it seems you stumbled on a lost link, but worry not, these links
-          might help you:
+          Oh, it seems you stumbled on a lost link while on your journey, but
+          worry not, these links might help you:
         </Text>
         <Link
           as={ReactLink}
