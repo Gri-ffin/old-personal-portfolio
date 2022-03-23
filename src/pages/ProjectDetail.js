@@ -43,14 +43,7 @@ const PageDetail = () => {
         }
       }}
     >
-      <Container
-        pt={28}
-        css={{
-          '&::-webkit-scrollbar': {
-            display: 'hidden'
-          }
-        }}
-      >
+      <Container pt={28}>
         <Heading
           as="h2"
           fontSize={20}
