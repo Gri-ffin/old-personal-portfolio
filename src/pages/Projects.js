@@ -1,24 +1,14 @@
 import React from 'react'
-import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react'
+import { Container, Heading } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 import { ProjectGridItem } from '../components/Projects/Projects'
 import discordCloneImage from '../images/projects/discord-clone.webp'
 import spotifyCloneImage from '../images/projects/spotify-clone.webp'
+import { Card } from '../components/UI/Card'
 
 const ProjectsPage = () => {
   return (
-    <Box
-      w="100vw"
-      h="100vh"
-      color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-      overflow="hidden"
-      overflowY="scroll"
-      css={{
-        '&::-webkit-scrollbar': {
-          display: 'hidden'
-        }
-      }}
-    >
+    <Card>
       <Container pt={28}>
         <Heading as="h2" fontSize={20} mb={6}>
           My Projects
@@ -51,7 +41,7 @@ const ProjectsPage = () => {
           </Section>
         </Container>
       </Container>
-    </Box>
+    </Card>
   )
 }
 export default ProjectsPage

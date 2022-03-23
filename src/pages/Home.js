@@ -1,30 +1,14 @@
 import React from 'react'
-import {
-  Box,
-  Button,
-  Container,
-  Heading,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Button, Container, Heading, useColorModeValue } from '@chakra-ui/react'
 import ParticleBackground from '../components/Particles/Particles'
 import Typewriter from 'typewriter-effect'
 import { Link } from 'react-router-dom'
 import { Section } from '../components/Section'
+import { Card } from '../components/UI/Card'
 
 const HomePage = () => {
   return (
-    <Box
-      w="100vw"
-      h="100vh"
-      color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-      overflow="hidden"
-      overflowY="scroll"
-      css={{
-        '&::-webkit-scrollbar': {
-          display: 'hidden'
-        }
-      }}
-    >
+    <Card>
       <ParticleBackground />
       <Container
         w="100%"
@@ -55,7 +39,7 @@ const HomePage = () => {
           </Heading>
         </Section>
       </Container>
-    </Box>
+    </Card>
   )
 }
 

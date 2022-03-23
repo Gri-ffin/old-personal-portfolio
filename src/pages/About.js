@@ -1,24 +1,14 @@
 import { WhatILove } from '../components/About/WhatILove'
 import { AboutMe } from './../components/About/AboutMe'
 import React from 'react'
-import { Box, useColorModeValue, Container, Image } from '@chakra-ui/react'
+import { Container, Image } from '@chakra-ui/react'
 import { ReachOut } from '../components/About/SocialMedia'
 import { motion } from 'framer-motion'
+import { Card } from '../components/UI/Card'
 
 const AboutPage = () => {
   return (
-    <Box
-      w="100vw"
-      h="100vh"
-      color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-      overflow="hidden"
-      overflowY="scroll"
-      css={{
-        '&::-webkit-scrollbar': {
-          display: 'hidden'
-        }
-      }}
-    >
+    <Card>
       <Container
         w="100%"
         h="47%"
@@ -56,7 +46,7 @@ const AboutPage = () => {
       <AboutMe />
       <WhatILove />
       <ReachOut />
-    </Box>
+    </Card>
   )
 }
 
