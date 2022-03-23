@@ -8,13 +8,14 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 import LoadingSpinner from '../components/LoadingSpinner'
 import { Card } from '../components/UI/Card'
 
 const PageDetail = () => {
   let { id } = useParams()
+  const navigate = useNavigate()
   const [projectData, setProjectData] = useState()
   const [languages, setLanguages] = useState()
   const [loading, setLoading] = useState(true)
@@ -22,13 +23,19 @@ const PageDetail = () => {
   useEffect(() => {
     setLoading(true)
     async function fetchData() {
-      const data = await axios.get(
-        `https://api.github.com/repos/gri-ffin/${id}`
-      )
-      setProjectData(data.data)
-      const languages = await axios.get(data.data.languages_url)
-      setLanguages(Object.getOwnPropertyNames(languages.data))
-      setLoading(false)
+      try {
+        const data = await axios.get(
+          `https://api.github.com/repos/gri-ffin/${id}`
+        )
+
+        setProjectData(data.data)
+        const languages = await axios.get(data.data.languages_url)
+        setLanguages(Object.getOwnPropertyNames(languages.data))
+        setLoading(false)
+        // if project doesn't exists or not enough permission just redirect to 404 page
+      } catch {
+        navigate('/404')
+      }
     }
 
     fetchData()
