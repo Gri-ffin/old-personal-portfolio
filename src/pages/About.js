@@ -1,10 +1,11 @@
 import { WhatILove } from '../components/About/WhatILove'
 import { AboutMe } from './../components/About/AboutMe'
 import React from 'react'
-import { Container, Image } from '@chakra-ui/react'
+import { Box, Container, Image } from '@chakra-ui/react'
 import { ReachOut } from '../components/About/SocialMedia'
 import { motion } from 'framer-motion'
 import { Card } from '../components/UI/Card'
+import { Footer } from '../components/Footer'
 
 const AboutPage = () => {
   return (
@@ -46,6 +47,9 @@ const AboutPage = () => {
       <AboutMe />
       <WhatILove />
       <ReachOut />
+      <Box textAlign="center">
+        <Footer />
+      </Box>
     </Card>
   )
 }

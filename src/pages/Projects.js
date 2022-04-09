@@ -1,10 +1,11 @@
 import React from 'react'
-import { Container, Heading } from '@chakra-ui/react'
+import { Box, Container, Heading } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 import { ProjectGridItem } from '../components/Projects/Projects'
 import discordCloneImage from '../images/projects/discord-clone.webp'
 import spotifyCloneImage from '../images/projects/spotify-clone.webp'
 import { Card } from '../components/UI/Card'
+import { Footer } from '../components/Footer'
 
 const ProjectsPage = () => {
   return (
@@ -41,6 +42,9 @@ const ProjectsPage = () => {
           </Section>
         </Container>
       </Container>
+      <Box textAlign="center">
+        <Footer />
+      </Box>
     </Card>
   )
 }

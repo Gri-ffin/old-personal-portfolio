@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {
   Badge,
+  Box,
   Button,
   Container,
   Heading,
@@ -12,6 +13,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 import LoadingSpinner from '../components/LoadingSpinner'
 import { Card } from '../components/UI/Card'
+import { Footer } from '../components/Footer'
 
 const PageDetail = () => {
   let { id } = useParams()
@@ -99,6 +101,9 @@ const PageDetail = () => {
           </Container>
         </Container>
       )}
+      <Box textAlign="center">
+        <Footer />
+      </Box>
     </Card>
   )
 }
