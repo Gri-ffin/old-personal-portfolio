@@ -1,10 +1,17 @@
 import React from 'react'
-import { Button, Container, Heading, useColorModeValue } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  useColorModeValue
+} from '@chakra-ui/react'
 import ParticleBackground from '../components/Particles/Particles'
 import Typewriter from 'typewriter-effect'
 import { Link } from 'react-router-dom'
 import { Section } from '../components/Section'
 import { Card } from '../components/UI/Card'
+import { Footer } from '../components/Footer'
 
 const HomePage = () => {
   return (
@@ -39,6 +46,9 @@ const HomePage = () => {
           </Heading>
         </Section>
       </Container>
+      <Box textAlign="center">
+        <Footer />
+      </Box>
     </Card>
   )
 }
