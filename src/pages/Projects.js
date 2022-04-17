@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Container, Heading } from '@chakra-ui/react'
 import { Section } from '../components/Section'
 import { ProjectGridItem } from '../components/Projects/Projects'
-import discordCloneImage from '../images/projects/discord-clone.webp'
+import classroomChatImage from '../images/projects/discord-clone.webp'
 import spotifyCloneImage from '../images/projects/spotify-clone.webp'
 import { Card } from '../components/UI/Card'
 import { Footer } from '../components/Footer'
@@ -19,12 +19,11 @@ const ProjectsPage = () => {
           <Section>
             <ProjectGridItem
               id="discord-clone"
-              title="Discord/public-chat"
-              image={discordCloneImage}
+              title="Classroom Chat"
+              image={classroomChatImage}
             >
-              A simple personal project with a discord front end where you can
-              connect with your google account and chat in a public rooms with
-              other people.
+              A project where me and my classmates can connect to our accounts
+              and freely talk.
             </ProjectGridItem>
           </Section>
         </Container>
