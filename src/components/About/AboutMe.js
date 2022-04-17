@@ -14,8 +14,9 @@ export function AboutMe() {
           18 years old, I&apos;m currently second year college student studying
           computer science, very passionate about coding in general, I find the
           idea of turning lines of code into very beautiful things very
-          charming, and currently trying to start my professional career as a
-          software developer.
+          charming. And whenever possible, I also apply my passion for
+          developing Side Projects with Node.js and Modern Javascript Library
+          and Frameworks like React.js and Next.js.
         </Paragraph>
       </Section>
     </Container>
