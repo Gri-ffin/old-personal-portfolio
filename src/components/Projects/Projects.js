@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 import { Link as ReactLink } from 'react-router-dom'
 import LoadingSpinner from '../LoadingSpinner'
 
-export const ProjectGridItem = ({ children, id, title, image }) => {
+export const ProjectGridItem = ({ children, id, title, image, techs }) => {
   return (
     <motion.div w="100%" align="center" whileHover={{ scale: 1.1 }}>
       <Link
         as={ReactLink}
-        to={`/projects/${id}`}
+        to={`/projects/${id}?tech=${techs.join('+')}`}
         style={{ textDecoration: 'none' }}
       >
         <LinkBox>
