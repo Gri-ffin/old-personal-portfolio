@@ -34,7 +34,7 @@ const ProjectsPage = () => {
               id="spotify-clone"
               title="Spotify Clone"
               image={spotifyCloneImage}
-              techs={['Nextjs, Tailwindcss', 'NextAuth', 'Recoil']}
+              techs={['Nextjs', 'Tailwindcss', 'NextAuth', 'Recoil']}
             >
               A school project where I created a lightweight spotify clone where
               I can connect with my spotify account and listen to my favorite
