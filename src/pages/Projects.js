@@ -21,6 +21,7 @@ const ProjectsPage = () => {
               id="discord-clone"
               title="Classroom Chat"
               image={classroomChatImage}
+              techs={['Nextjs', 'Tailwindcss', 'Firebase']}
             >
               A project where me and my classmates can connect to our accounts
               and freely talk.
@@ -33,6 +34,7 @@ const ProjectsPage = () => {
               id="spotify-clone"
               title="Spotify Clone"
               image={spotifyCloneImage}
+              techs={['Nextjs, Tailwindcss', 'NextAuth', 'Recoil']}
             >
               A school project where I created a lightweight spotify clone where
               I can connect with my spotify account and listen to my favorite
