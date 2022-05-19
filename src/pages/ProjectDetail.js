@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import {
   Badge,
   Box,
@@ -9,7 +9,7 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 import LoadingSpinner from '../components/LoadingSpinner'
 import { Card } from '../components/UI/Card'
@@ -19,8 +19,9 @@ const PageDetail = () => {
   let { id } = useParams()
   const navigate = useNavigate()
   const [projectData, setProjectData] = useState()
-  const [languages, setLanguages] = useState()
   const [loading, setLoading] = useState(true)
+  const query = useQuery()
+  let projectTech = query.get('tech')
 
   useEffect(() => {
     setLoading(true)
@@ -31,8 +32,6 @@ const PageDetail = () => {
         )
 
         setProjectData(data.data)
-        const languages = await axios.get(data.data.languages_url)
-        setLanguages(Object.getOwnPropertyNames(languages.data))
         setLoading(false)
         // if project doesn't exists or not enough permission just redirect to 404 page
       } catch {
@@ -67,9 +66,9 @@ const PageDetail = () => {
             </Badge>
             <Text fontSize={16}>{projectData?.description}</Text>
             <Badge fontSize={15} p={1} mt={3}>
-              Languages
+              Tech Used
             </Badge>
-            <Text fontSize={16}>{languages?.join(', ')}</Text>
+            <Text fontSize={16}>{projectTech.split(' ').join(', ')}</Text>
             <Badge fontSize={15} p={1} mt={3}>
               Created at
             </Badge>
@@ -109,3 +108,8 @@ const PageDetail = () => {
 }
 
 export default PageDetail
+
+function useQuery() {
+  const { search } = useLocation()
+  return useMemo(() => new URLSearchParams(search), [search])
+}
