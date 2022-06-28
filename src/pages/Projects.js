@@ -4,6 +4,7 @@ import { Section } from '../components/Section'
 import { ProjectGridItem } from '../components/Projects/Projects'
 import classroomChatImage from '../images/projects/discord-clone.webp'
 import spotifyCloneImage from '../images/projects/spotify-clone.webp'
+import mangaReader from '../images/projects/manga-reader.webp'
 import { Card } from '../components/UI/Card'
 import { Footer } from '../components/Footer'
 
@@ -42,6 +43,19 @@ const ProjectsPage = () => {
             </ProjectGridItem>
           </Section>
         </Container>
+      </Container>
+      <Container>
+        <Section>
+          <ProjectGridItem
+            id="manga-reader"
+            title="Manga Reader"
+            image={mangaReader}
+            techs={['Nextjs', 'Chakra UI', 'Rest API']}
+          >
+            A Project where I created a website to read different types of
+            manga, using the mangadex public api.
+          </ProjectGridItem>
+        </Section>
       </Container>
       <Box textAlign="center">
         <Footer />
