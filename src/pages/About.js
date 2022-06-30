@@ -38,7 +38,7 @@ const AboutPage = () => {
             borderStyle="solid"
             maxWidth="100px"
             display="inline-block"
-            borderRadius="full"
+            borderRadius="2xl"
             src="/images/profile-pic.jpeg"
             alt="Yassine Tadlaoui Picture"
           />
