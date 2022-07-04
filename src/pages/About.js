@@ -1,26 +1,22 @@
 import { WhatILove } from '../components/About/WhatILove'
 import { AboutMe } from './../components/About/AboutMe'
 import React from 'react'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import { ReachOut } from '../components/About/SocialMedia'
 import { Footer } from '../components/Footer'
 
 const AboutPage = () => {
   return (
-    <Container
-      display="flex"
-      flexDir="column"
-      justifyContent="center"
-      alignItems="center"
-      h="100vh"
-    >
-      <AboutMe />
-      <WhatILove />
-      <ReachOut />
-      <Box textAlign="center">
-        <Footer />
-      </Box>
-    </Container>
+    <Flex alignItems="center" w="100vw" h="100vh" justifyContent="center">
+      <Flex flexDir="column">
+        <AboutMe />
+        <WhatILove />
+        <ReachOut />
+        <Box textAlign="center">
+          <Footer />
+        </Box>
+      </Flex>
+    </Flex>
   )
 }
 
