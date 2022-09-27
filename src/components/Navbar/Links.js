@@ -21,7 +21,7 @@ export function NavbarLinks() {
       flexGrow={1}
       mt={{
         base: 4,
-        nmd: 0
+        md: 0
       }}
     >
       <NavBarLink path="/about" text="About" />
