@@ -1,7 +1,12 @@
 import React from 'react'
 import { Container, Heading, Link, useColorModeValue } from '@chakra-ui/react'
 import { Section } from '../Section'
-import { IoLogoGithub, IoLogoLinkedin, IoMdMail } from 'react-icons/io'
+import {
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoMdMail,
+  IoMdDocument
+} from 'react-icons/io'
 import { motion } from 'framer-motion'
 
 export const ReachOut = () => {
@@ -55,6 +60,23 @@ export const ReachOut = () => {
               }}
             >
               <IoMdMail size={50} />
+            </motion.button>
+          </Link>
+          <Link
+            key="Resume"
+            href="/resume.pdf"
+            color={useColorModeValue('gray.900', 'whiteAlpha.900')}
+            marginLeft="1.5rem"
+            isExternal
+            download
+          >
+            <motion.button
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 0.3 }
+              }}
+            >
+              <IoMdDocument size={50} />
             </motion.button>
           </Link>
         </Container>
