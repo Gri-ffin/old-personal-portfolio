@@ -7,6 +7,7 @@ const ProjectsPage = React.lazy(() => import('./pages/Projects'))
 import LoadingSpinner from './components/LoadingSpinner'
 import Page404 from './pages/404Page'
 import ClassroomChatPage from './pages/Projects/classroom-chat'
+import TechsPage from './pages/Projects/techs'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/projects">
             <Route path="classroom-chat" element={<ClassroomChatPage />} />
+            <Route path="techs" element={<TechsPage />} />
           </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>
