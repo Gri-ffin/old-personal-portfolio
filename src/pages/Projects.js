@@ -1,8 +1,9 @@
 import React from 'react'
 import { Box, Container, Heading } from '@chakra-ui/react'
-import classroomChatImage from '../images/projects/discord-clone.webp'
+import classroomChatImage from '../images/projects/classroom-chat.webp'
 import spotifyCloneImage from '../images/projects/spotify-clone.webp'
 import mangaReader from '../images/projects/manga-reader.webp'
+import techsImage from '../images/projects/techs.png'
 import { Card } from '../components/UI/Card'
 import { Footer } from '../components/Footer'
 import Project from '../components/Projects/Project'
@@ -19,8 +20,12 @@ const ProjectsPage = () => {
           title="Classroom Chat"
           image={classroomChatImage}
         >
-          A project where me and my classmates can connect to our accounts and
-          freely talk.
+          A school project where me and my classmates can connect to our
+          accounts and freely talk in real time.
+        </Project>
+        <Project id="techs" title="Techs and skills" image={techsImage}>
+          Portfolio website to showcase the skills I Learned and technologies I
+          use.
         </Project>
         <Project
           id="spotify-clone"
