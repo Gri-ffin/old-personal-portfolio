@@ -16,7 +16,7 @@ export function AboutMe() {
           About me
         </Heading>
         <Paragraph>
-          18 years old, I&apos;m currently second year college student studying
+          19 years old, I&apos;m currently second year college student studying
           computer science, very passionate about coding in general, I find the
           idea of turning lines of code into very beautiful things very
           charming. And whenever possible, I also apply my passion for
