@@ -10,17 +10,16 @@ import {
   ListItem
 } from '@chakra-ui/react'
 import LoadingSpinner from '../../components/LoadingSpinner'
-import image from '../../assets/classroom-chat.webp'
+import image from '../../images/projects/classroom-chat.webp'
 import { Section } from '../../components/Section'
 import { Card } from '../../components/UI/Card'
-import { Link as ReactLink } from 'react-router-dom'
 
 const ClassroomChatPage = () => {
   return (
     <Card>
       <Container pt={28}>
         <Section>
-          <Link as={ReactLink} to="https://classroom-chat-gri-ffin.vercel.app">
+          <Link isExternal to="https://classroom-chat-gri-ffin.vercel.app">
             <LinkBox>
               <Heading
                 mb={2}
