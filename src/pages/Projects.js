@@ -15,10 +15,9 @@ const ProjectsPage = () => {
           My Projects
         </Heading>
         <Project
-          id="discord-clone"
+          id="classroom-chat"
           title="Classroom Chat"
           image={classroomChatImage}
-          techs={['Nextjs', 'Tailwindcss', 'Firebase']}
         >
           A project where me and my classmates can connect to our accounts and
           freely talk.
@@ -27,17 +26,11 @@ const ProjectsPage = () => {
           id="spotify-clone"
           title="Spotify Clone"
           image={spotifyCloneImage}
-          techs={['Nextjs', 'Tailwindcss', 'NextAuth', 'Recoil']}
         >
           A school project where I created a lightweight spotify clone where I
           can connect with my spotify account and listen to my favorite music.
         </Project>
-        <Project
-          id="manga-reader"
-          title="Manga Reader"
-          image={mangaReader}
-          techs={['Nextjs', 'ChakraUI', 'Rest-API']}
-        >
+        <Project id="manga-reader" title="Manga Reader" image={mangaReader}>
           A Project where I created a website to read different types of manga,
           using the mangadex public api.
         </Project>
