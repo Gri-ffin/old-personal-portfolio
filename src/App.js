@@ -6,7 +6,7 @@ const HomePage = React.lazy(() => import('./pages/Home'))
 const ProjectsPage = React.lazy(() => import('./pages/Projects'))
 import LoadingSpinner from './components/LoadingSpinner'
 import Page404 from './pages/404Page'
-import PageDetail from './pages/ProjectDetail'
+import ClassroomChatPage from './pages/Projects/classroom-chat'
 
 function App() {
   return (
@@ -17,7 +17,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/projects/:id" element={<PageDetail />} />
+          <Route path="/projects">
+            <Route path="classroom-chat" element={<ClassroomChatPage />} />
+          </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Suspense>
