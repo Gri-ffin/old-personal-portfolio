@@ -8,6 +8,7 @@ import LoadingSpinner from './components/LoadingSpinner'
 import Page404 from './pages/404Page'
 import ClassroomChatPage from './pages/Projects/classroom-chat'
 import TechsPage from './pages/Projects/techs'
+import SpotifyClonePage from './pages/Projects/spotify-clone'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/projects">
             <Route path="classroom-chat" element={<ClassroomChatPage />} />
             <Route path="techs" element={<TechsPage />} />
+            <Route path="spotify-clone" element={<SpotifyClonePage />} />
           </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>
