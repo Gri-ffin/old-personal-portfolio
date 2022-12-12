@@ -28,7 +28,7 @@ const TechsPage = () => {
               </Heading>
               <Image
                 src={image}
-                alt={`Project classroom chat thumbnail`}
+                alt={`Project Techs thumbnail`}
                 borderRadius="lg"
                 placeholder="blur"
                 fallback={<LoadingSpinner imageLoad={true} />}
