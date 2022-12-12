@@ -9,6 +9,7 @@ import Page404 from './pages/404Page'
 import ClassroomChatPage from './pages/Projects/classroom-chat'
 import TechsPage from './pages/Projects/techs'
 import SpotifyClonePage from './pages/Projects/spotify-clone'
+import MangaReaderPage from './pages/Projects/manga-reader'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="classroom-chat" element={<ClassroomChatPage />} />
             <Route path="techs" element={<TechsPage />} />
             <Route path="spotify-clone" element={<SpotifyClonePage />} />
+            <Route path="manga-reader" element={<MangaReaderPage />} />
           </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>
