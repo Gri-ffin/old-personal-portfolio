@@ -36,13 +36,15 @@ const HomePage = () => {
                 loop: true
               }}
             />
-            <Button
-              bg={useColorModeValue('gray.100', 'black')}
-              color={useColorModeValue('gray.900', 'white')}
-              mt={5}
-            >
-              <Link to="/about"> About me</Link>
-            </Button>
+            <Link to="/about">
+              <Button
+                bg={useColorModeValue('gray.100', 'black')}
+                color={useColorModeValue('gray.900', 'white')}
+                mt={5}
+              >
+                About me
+              </Button>
+            </Link>
           </Heading>
         </Section>
       </Container>
