@@ -19,7 +19,7 @@ const SpotifyClonePage = () => {
     <Card>
       <Container pt={28}>
         <Section>
-          <Link isExternal to="https://spotify-clone-gri-ffin.vercel.app">
+          <Link isExternal href="https://spotify-clone-gri-ffin.vercel.app">
             <LinkBox>
               <Heading
                 mb={2}

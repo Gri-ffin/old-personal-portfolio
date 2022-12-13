@@ -17,7 +17,7 @@ const TechsPage = () => {
     <Card>
       <Container pt={28}>
         <Section>
-          <Link isExternal to="https://techs-gri-ffin.vercel.app">
+          <Link isExternal href="https://techs-gri-ffin.vercel.app">
             <LinkBox>
               <Heading
                 mb={2}

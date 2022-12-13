@@ -19,7 +19,7 @@ const MangaReaderPage = () => {
     <Card>
       <Container pt={28}>
         <Section>
-          <Link isExternal to="https://manga-reader-gri-ffin.vercel.app">
+          <Link isExternal href="https://manga-reader-gri-ffin.vercel.app">
             <LinkBox>
               <Heading
                 mb={2}
