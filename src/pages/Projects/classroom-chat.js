@@ -19,7 +19,7 @@ const ClassroomChatPage = () => {
     <Card>
       <Container pt={28}>
         <Section>
-          <Link isExternal href="https://classroom-chat-gri-ffin.vercel.app">
+          <Link isExternal href="https://github.com/gri-ffin/classrom-chat">
             <LinkBox>
               <Heading
                 mb={2}
